@@ -1,0 +1,3 @@
+Utiliser la commande whois puis regarder la valeur de Registrar URL
+
+cf: whois slash16.org | grep 'Registrar URL' | awk '{print $3}'
