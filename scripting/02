@@ -1,0 +1,2 @@
+#!/bin/sh
+read -p "Wish user you want to remove ?" usrname

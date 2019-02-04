@@ -1,0 +1,8 @@
+traceroute: Warning: slash16.org has multiple addresses; using 52.85.221.213
+traceroute to slash16.org (52.85.221.213), 64 hops max, 52 byte packets
+ 1  10.11.254.254 (10.11.254.254)  0.862 ms  2.921 ms  0.739 ms
+ 2  nat-1 (10.60.1.11)  0.160 ms  0.163 ms  0.146 ms
+ 3  dc3 (62.210.35.1)  1.755 ms  1.829 ms  1.878 ms
+
+On peux en deduire que la passerelle avec le monde exterieur est nat-1 a l'adresse 10.60.1.11
+car dc3 n'est pas une adresse comprise dans la meme plage d'adresse de notre reseaux local.
