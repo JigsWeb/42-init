@@ -1,2 +1,6 @@
 #!/bin/sh
-read -p "Wish user you want to remove ?" usrname
+read -p "Wish user you want to remove ? " username
+if [ `getent passwd $username | wc -l` = "1" ]
+then
+	killall -KILL -u $username
+fi
